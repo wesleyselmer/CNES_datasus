@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230630 11:47:28.343" rpa="true" schemaversion="4">
+<suite id="s1" name="Tasks" source="C:\Users\wesley.selmer\Documents\dev\python\robotFramework\CNES\tasks.robot">
+<test id="s1-t1" name="Download de informações CNES" line="26">
+<kw name="Baixar arquivo CSV">
+<kw name="Download">
+<arg>${arquivoCSV}</arg>
+<arg>${DOWNLOAD_DIR}\\LOCALIDADES.CSV</arg>
+<arg>overwrite=Yes</arg>
+<msg timestamp="20230630 11:47:28.503" level="FAIL">No keyword with name 'Download' found.</msg>
+<status status="FAIL" starttime="20230630 11:47:28.503" endtime="20230630 11:47:28.503"/>
+</kw>
+<status status="FAIL" starttime="20230630 11:47:28.499" endtime="20230630 11:47:28.504"/>
+</kw>
+<kw name="Tratar arquivo CSV">
+<status status="NOT RUN" starttime="20230630 11:47:28.504" endtime="20230630 11:47:28.504"/>
+</kw>
+<kw name="Navegar para tela inicial">
+<status status="NOT RUN" starttime="20230630 11:47:28.504" endtime="20230630 11:47:28.504"/>
+</kw>
+<kw name="Salvar PDF's individuais">
+<status status="NOT RUN" starttime="20230630 11:47:28.505" endtime="20230630 11:47:28.505"/>
+</kw>
+<kw name="Fechar Browser" type="TEARDOWN">
+<kw name="Close All Browsers">
+<msg timestamp="20230630 11:47:28.509" level="FAIL">No keyword with name 'Close All Browsers' found.</msg>
+<status status="FAIL" starttime="20230630 11:47:28.509" endtime="20230630 11:47:28.510"/>
+</kw>
+<status status="FAIL" starttime="20230630 11:47:28.505" endtime="20230630 11:47:28.510">No keyword with name 'Close All Browsers' found.</status>
+</kw>
+<status status="FAIL" starttime="20230630 11:47:28.498" endtime="20230630 11:47:28.511">No keyword with name 'Download' found.
+
+Also teardown failed:
+No keyword with name 'Close All Browsers' found.</status>
+</test>
+<doc>Baixar CSV com as localidades e baixar informações de saúde do site do CNES.</doc>
+<status status="FAIL" starttime="20230630 11:47:28.346" endtime="20230630 11:47:28.513"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230630 11:47:28.417" level="ERROR">Error in file 'C:\Users\wesley.selmer\Documents\dev\python\robotFramework\CNES\tasks.robot' on line 4: Importing library 'RPA.Browser.Selenium' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python311\Scripts\robot.exe
+  C:\Python311\python311.zip
+  C:\Python311\DLLs
+  C:\Python311\Lib
+  C:\Python311
+  C:\Python311\Lib\site-packages</msg>
+<msg timestamp="20230630 11:47:28.422" level="ERROR">Error in file 'C:\Users\wesley.selmer\Documents\dev\python\robotFramework\CNES\tasks.robot' on line 5: Importing library 'RPA.HTTP' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python311\Scripts\robot.exe
+  C:\Python311\python311.zip
+  C:\Python311\DLLs
+  C:\Python311\Lib
+  C:\Python311
+  C:\Python311\Lib\site-packages</msg>
+<msg timestamp="20230630 11:47:28.426" level="ERROR">Error in file 'C:\Users\wesley.selmer\Documents\dev\python\robotFramework\CNES\tasks.robot' on line 6: Importing library 'RPA.Desktop' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python311\Scripts\robot.exe
+  C:\Python311\python311.zip
+  C:\Python311\DLLs
+  C:\Python311\Lib
+  C:\Python311
+  C:\Python311\Lib\site-packages</msg>
+<msg timestamp="20230630 11:47:28.430" level="ERROR">Error in file 'C:\Users\wesley.selmer\Documents\dev\python\robotFramework\CNES\tasks.robot' on line 7: Importing library 'RPA.Tables' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python311\Scripts\robot.exe
+  C:\Python311\python311.zip
+  C:\Python311\DLLs
+  C:\Python311\Lib
+  C:\Python311
+  C:\Python311\Lib\site-packages</msg>
+<msg timestamp="20230630 11:47:28.450" level="ERROR">Error in file 'C:\Users\wesley.selmer\Documents\dev\python\robotFramework\CNES\tasks.robot' on line 9: Importing library 'RPA.Windows' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python311\Scripts\robot.exe
+  C:\Python311\python311.zip
+  C:\Python311\DLLs
+  C:\Python311\Lib
+  C:\Python311
+  C:\Python311\Lib\site-packages</msg>
+</errors>
+</robot>
